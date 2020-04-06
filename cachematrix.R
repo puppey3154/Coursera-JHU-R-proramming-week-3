@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+## This function helps to inverse the input of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
 inv <- NULL
@@ -10,7 +11,7 @@ set <- function(y){
   inv <<- NULL
 }
 get <- function ()x
-setinverse <- function() inv <<- solve(x) ## calculate the inverse
+setinverse <- function(inverse) inv <<- inverse ## calculate the inverse
 getinverse <- function()inv
 list(set=get, get = get, setinverse= setinverse, getinverse=getinverse)
   
